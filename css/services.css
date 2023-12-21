@@ -20,6 +20,8 @@ body {
 
 .services_list {
   flex: 1 30%;
+  overflow-y: scroll;
+  position: sticky;
 }
 
 details {
