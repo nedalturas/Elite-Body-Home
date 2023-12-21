@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  box-sizing: border-box;
+}
+
+.service_grid {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+}
+
+.service_description {
+  flex: 1 70%;
+}
+
+.services_list {
+  flex: 1 30%;
+}
+
+details {
+  min-width: fit-content;
+  padding: 0.5em 1em;
+  margin: 0;
+  border-bottom: none;
+  transition: 200ms ease;
+}
+
+details a {
+  padding: 0;
+  margin: 0;
+  text-indent: 1em;
+  display: block;
+}
