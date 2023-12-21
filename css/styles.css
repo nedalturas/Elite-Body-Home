@@ -27,8 +27,16 @@ header {
   filter: contrast(80%);
 }
 
-header h1 {
-  color: white;
+header hgroup {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.4px);
+  -webkit-backdrop-filter: blur(6.4px);
+  border: 1px solid rgba(255, 255, 255, 0.21);
+  width: fit-content;
+  padding: 1em;
 }
 
 header ul li {
@@ -36,7 +44,7 @@ header ul li {
 }
 
 header hgroup h3 {
-  color: white;
+  color: black;
 }
 
 /* Map */
@@ -50,4 +58,10 @@ header hgroup h3 {
 .map iframe {
   height: auto;
   width: auto;
+}
+
+footer {
+  background-color: lightcyan;
+  height: 1em;
+  text-align: center;
 }
