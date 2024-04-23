@@ -1,20 +1,44 @@
 [
-    {
-      "name": "Category 1",
-      "services": [
-        {
-          "name": "Service 1",
-          "description": "This is the description for Service 1 under Category 1."
-        }
-      ]
-    },
-    {
-      "name": "Category 2",
-      "services": [
-        {
-          "name": "Service 2",
-          "description": "This is the description for Service 2 under Category 2."
-        }
-      ]
-    }
-  ]
+  {
+    "id": "plumbing-1",
+    "name": "Sink Unclogging",
+    "description": "Professional plumbing services for unclogging sinks.",
+    "price": 75.0,
+    "category": "Plumbing"
+  },
+  {
+    "id": "plumbing-2",
+    "name": "Faucet Repair",
+    "description": "Repair and replacement of leaky faucets.",
+    "price": 90.0,
+    "category": "Plumbing"
+  },
+  {
+    "id": "electrical-1",
+    "name": "Outlet Installation",
+    "description": "Installation of new electrical outlets.",
+    "price": 60.0,
+    "category": "Electrical"
+  },
+  {
+    "id": "electrical-2",
+    "name": "Lighting Repair",
+    "description": "Repair and replacement of lighting fixtures.",
+    "price": 55.0,
+    "category": "Electrical"
+  },
+  {
+    "id": "carpentry-1",
+    "name": "Furniture Assembly",
+    "description": "Assembly of flat-pack furniture.",
+    "price": 45.0,
+    "category": "Carpentry"
+  },
+  {
+    "id": "carpentry-2",
+    "name": "Shelving Installation",
+    "description": "Custom shelving installation.",
+    "price": 50.0,
+    "category": "Carpentry"
+  }
+]
