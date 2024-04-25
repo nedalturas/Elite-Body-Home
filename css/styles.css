@@ -21,13 +21,19 @@ body {
 }
 
 header {
-  background-image: url(../assets/header.jpg);
+  /* background-image: url(../assets/header.jpg)
+  ; */
+  background-color: aquamarine;
   background-size: cover;
   background-position: center center;
   filter: contrast(80%);
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-header hgroup {
+header div {
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.4);
   border-radius: 16px;
@@ -35,16 +41,13 @@ header hgroup {
   backdrop-filter: blur(6.4px);
   -webkit-backdrop-filter: blur(6.4px);
   border: 1px solid rgba(255, 255, 255, 0.21);
-  width: fit-content;
+  min-height: 20vh;
+  text-align: center;
   padding: 1em;
 }
 
-header ul li {
-  list-style: none;
-}
-
-header hgroup h3 {
-  color: black;
+header div input{
+  max-width: 70%;
 }
 
 /* Map */
