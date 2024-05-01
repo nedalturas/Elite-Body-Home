@@ -60,9 +60,34 @@ header div input{
   padding: 2em;
 }
 
-#sect_service{
-  text-align: center;
-  padding: 1em;
+/*Service Cards*/
+
+#sect_service h4{
+  text-align: center;  
+}
+
+article{
+  min-height: 300px;
+  max-width: 400px;
+  transition: box-shadow 400ms ease;
+}
+
+article:hover{
+  cursor: pointer;
+  box-shadow: 8px 12px 19px -5px rgba(0,0,0,0.1);
+}
+
+article img{
+  width: 100%;
+}
+
+article h5{
+  margin-top: 1em;  
+}
+
+article p{
+  font-weight: lighter;
+  font-size: .8em;
 }
 
 /* Map */
