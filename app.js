@@ -34,12 +34,6 @@ function createServiceCard(Services){
     </article>
   `;
 
-  if(createServiceCard === 4){
-
-    
-
-  }
-
 }
 
 const serviceContainer = document.getElementById('service_container')

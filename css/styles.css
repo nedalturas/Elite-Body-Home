@@ -57,7 +57,7 @@ header div input{
 }
 
 #content section{
-  padding: 1em;
+  padding: 2em;
 }
 
 #sect_service{
@@ -86,11 +86,3 @@ header div input{
   width: auto;
 }
 
-footer {
-  background-color: lightcyan;
-  height: 5em;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
