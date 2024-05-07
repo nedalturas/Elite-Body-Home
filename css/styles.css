@@ -19,7 +19,8 @@ body {
   display: flex;
   align-items: center;
   z-index: 100;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
 }
 
 header {
@@ -64,11 +65,15 @@ header div input{
 
 #sect_service h4{
   text-align: center;  
+  margin-bottom: 2em;
 }
 
 article{
+  margin: 0;
+  padding: 0;
   min-height: 300px;
-  max-width: 400px;
+  max-width: 700px;
+  min-width: 400px;
   transition: box-shadow 400ms ease;
 }
 
@@ -81,8 +86,8 @@ article img{
   width: 100%;
 }
 
-article h5{
-  margin-top: 1em;  
+article div{
+  padding: .5em .5em 0 .5em;
 }
 
 article p{
