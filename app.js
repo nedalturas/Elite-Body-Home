@@ -21,11 +21,24 @@ const Services = [
   },
   {
     image: "assets/header.jpg",
-    name: "Service 4",
+    name: "Service 3",
     servicepic: "",
-    description: "This is a service description for service 4"
+    description: "This is a service description for service 3"
   },
-
+  {
+      image: "assets/header.jpg",
+      name: "Service 3",
+      servicepic: "",
+      description: "This is a service description for service 3"
+  },
+   {
+      image: "assets/header.jpg",
+      name: "Service 5",
+      servicepic: "",
+      description: "This is a service description for service 3"
+  },
+   
+ 
 ];
 
 
@@ -33,9 +46,12 @@ function createServiceCard(Services){
 
   return `
     <article>
-      <img src="${Services.image}">
-      <h5>${Services.name}</h5>
-      <p>${Services.description}</p>
+        <img src="${Services.image}">
+        <div>
+          <h5>${Services.name}</h5>
+          <p>${Services.description}</p>
+        </div>
+
     </article>
   `;
 
