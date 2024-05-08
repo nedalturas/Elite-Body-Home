@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+
     <title></title>
 
-      <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
-  />
-
+    <link rel="stylesheet" type="text/css" href="css/pico.conditional.min.css" />
+    <link
+  rel="stylesheet" type="text/css"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.conditional.min.css"
+/>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
     <script defer src="app.js"></script>
@@ -17,57 +19,70 @@
   </head>
   <body>
 
-    <div class="nav">
-      <nav class="container">
-        <ul>
-          <li>
-            <strong>Elite Body Home</strong>
-          </li>
-        </ul>
+    <div class="pico">
 
-        <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-        </ul>
-      </nav>
-    </div>
+      <!-- Navbar -->
+      <div class="nav">
+        <nav class="container">
+          <ul>
+            <li>
+              <strong>Elite Body Home</strong>
+            </li>
+          </ul>
 
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </nav>
+      </div>
 
-    <header class="container-fluid">
+      <!-- Header -->
+      
+      <header class="container-fluid">
         <div class="container">
           <h1 class="contrast">Elite Body Home Polyclinic</h1>
           <p>Knowlege base website</p>
-        <input type="search" name="search" placeholder="Search" aria-label="Search"/>
-        </div>
-    </header>
+       
+          <form role="search">
+            <input name="search" type="search" placeholder="Search" />
+            <input type="submit" value="Search" />
+          </form>
 
+        </div>
+      </header>
+
+      <!-- Content -->
       <main class="container" id="content">
+
+          <section>
+              <h1>Knowledge at a Glance</h1>
+              <p>
+                Provide accurate information with the customers, easily navigate
+                through Elite Body Home's services and access every information you
+                need. Just click the service and read it! Just like that!
+              </p>
+          </section>
           
           <section>
-            <h1>Knowledge at a Glance</h1>
-            <p>
-              Provide accurate information with the customers, easily navigate
-              through Elite Body Home's services and access every information you
-              need. Just click the service and read it! Just like that!
-            </p>
+              <h1>Services</h1>
+              <p>
+                Elite Body Home is offering topnotch aesthetic services throughout
+                Dubai. State-of-the art technologies partnered with highly trained
+                professionals, we make sure that we achieve the change you deserve!
+              </p>
           </section>
 
-          <section>
-            
-            <h1>Services</h1>
-            <p>
-              Elite Body Home is offering topnotch aesthetic services throughout
-              Dubai. State-of-the art technologies partnered with highly trained
-              professionals, we make sure that we achieve the change you deserve!
-            </p>
+          
 
-          </section>
+          
+      </main>
 
-          <section id="sect_service">
+       <section id="sect_service">
 
             <h4>Our Services</h4>
 
-            <div class="grid" id="service_container">
+            <div class="container-fluid" id="service_container">
                 
             <!-- 
               Services
@@ -79,52 +94,53 @@
           </section>
 
 
+      <section class="container" id="sect_location">
+        
+            <h1>We are here 📌</h1>
 
-      <!-- Map -->
+            <div class="grid">
 
-      <section id="sect_location">
-      
-        <h1>We are here 📌</h1>
+              <div>
+                
+                <h6>Awards Building - 2nd December Street Jumeirah 1 Block B - 117 1st Floor - Al Hudaiba - Dubai - United Arab Emirates</h6>
 
-        <div class="grid">
+                <ul>
+                  
+                Contact Us:
 
-          <div>
-            <h6>Awards Building - 2nd December Street Jumeirah 1 Block B - 117 1st Floor - Al Hudaiba - Dubai - United Arab Emirates</h6>
-
-            <ul>
+                  <li>Phone</li>
+                  <li>Whatsapp</li>
+                  <li>Email</li>
+                </ul>
               
-            Contact Us:
+              </div>
 
-              <li>Phone</li>
-              <li>Whatsapp</li>
-              <li>Email</li>
-            </ul>
-          
-          </div>
+                <div>
 
-          <div>
+                  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.884617866006!2d55.26977007643405!3d25.240810929930873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43f5e67bd68b%3A0x3d823650a229b565!2sElite%20Body%20Home%20Aesthetic%20Polyclinic%20-%20Slimming%20%7C%20Laser%20Hair%20Removal%20%7C%20Botox%20Fillers!5e0!3m2!1sen!2sph!4v1714147387498!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.884617866006!2d55.26977007643405!3d25.240810929930873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43f5e67bd68b%3A0x3d823650a229b565!2sElite%20Body%20Home%20Aesthetic%20Polyclinic%20-%20Slimming%20%7C%20Laser%20Hair%20Removal%20%7C%20Botox%20Fillers!5e0!3m2!1sen!2sph!4v1714147387498!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
 
-          </div>
-
-        </div>
+            </div>
 
 
-      </section>
-
-    </main>
+        </section>
 
 
-    <footer class="container-fluid">
-        <p>
-          Made with ♥ by
-          <a href="https://github.com/nedalturas" target="_blank"
-            >Ned Alturas</a
-          >
-        </p>
-    </footer>
+        <footer>
+          <p>
+            Made with ♥ by
+            <a href="https://github.com/nedalturas" target="_blank"
+              >Ned Alturas</a
+            >
 
-    
+          </p>
+        </footer>
+    </div>
+
+
+         
+
+      
   </body>
 </html>
