@@ -11,9 +11,9 @@ body {
 /* Custom Class-less version for React */
 
 .nav {
-  -webkit-box-shadow: 0px 0px 16px -4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 16px -4px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 16px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
   position: sticky;
   top: 0;
   display: flex;
@@ -96,6 +96,7 @@ article{
 
 #sect_location{
   margin-top: 5em;
+  margin-bottom: 5em;
 }
 
 #sect_location ul li{
@@ -117,7 +118,7 @@ article{
 /*Footer*/
 
 footer{
-  margin: 0;
+  margin-top: 2em;
   padding: 0;
   height: 100px;
   display: flex;

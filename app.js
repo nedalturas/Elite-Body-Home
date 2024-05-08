@@ -1,3 +1,18 @@
+window.addEventListener('scroll', function(){
+
+  const navbar = document.getElementById('navbar');
+
+  if (window.pageYOffset > 0) {
+
+    navbar.style.boxShadow = '0px 0px 16px -4px rgba(0, 0, 0, 0.75)';
+    navbar.style.transition = 'boxShadow 500ms';
+
+
+  } else {
+    navbar.style.boxShadow = '0px 0px 0px 0px rgba(0, 0, 0, 0)';
+  }
+
+});
 
 const Services = [
 
