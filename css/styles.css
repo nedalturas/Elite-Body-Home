@@ -49,8 +49,8 @@ header div {
   padding: 1em;
 }
 
-header div input{
-  max-width: 70%;
+header div form{
+  max-width: 50%;
 }
 
 #content{
@@ -63,36 +63,33 @@ header div input{
 
 /*Service Cards*/
 
-#sect_service h4{
-  text-align: center;  
-  margin-bottom: 2em;
+#sect_service{
+  text-align: center;
 }
+
+.service_row {
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+} 
 
 article{
   margin: 0;
   padding: 0;
-  min-height: 300px;
-  max-width: 700px;
-  min-width: 400px;
-  transition: box-shadow 400ms ease;
 }
 
-article:hover{
-  cursor: pointer;
-  box-shadow: 8px 12px 19px -5px rgba(0,0,0,0.1);
+.service-card {
+  border: 1px solid #ccc;
+  max-width: 300px;
+  min-height: 350px;
+  text-align: center;
 }
 
-article img{
-  width: 100%;
-}
-
-article div{
-  padding: .5em .5em 0 .5em;
-}
-
-article p{
-  font-weight: lighter;
-  font-size: .8em;
+.service-pic {
+  width: auto;
+  height: auto;
 }
 
 /* Map */
@@ -116,3 +113,15 @@ article p{
   width: auto;
 }
 
+
+/*Footer*/
+
+footer{
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  background-color: azure;
+}
