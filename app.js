@@ -18,35 +18,38 @@ const Services = [
 
   {
     image: "assets/header.jpg",
-    name: "Service 1",
+    name: "Weight Management",
     description: "This is a service description for service 1"
   },
   {
     image: "assets/header.jpg",
-    name: "Service 2",
+    name: "Physiotherapy",
     description: "This is a service description for service 2"
   },
   {
     image: "assets/header.jpg",
-    name: "Service 3",
+    name: "Skin Care",
     description: "This is a service description for service 3"
   },
   {
     image: "assets/header.jpg",
-    name: "Service 3",
+    name: "Home Care",
     description: "This is a service description for service 3"
   },
   {
-      image: "assets/header.jpg",
-      name: "Service 3",
-
-      description: "This is a service description for service 3"
+    image: "assets/header.jpg",
+    name: "Home Lab Test",
+    description: "This is a service description for service 3"
   },
   {
-      image: "assets/header.jpg",
-      name: "Service 3",
-
-      description: "This is a service description for service 3"
+    image: "assets/header.jpg",
+    name: "IV Drips",
+    description: "This is a service description for service 3"
+  },
+  {
+    image: "assets/header.jpg",
+    name: "Laser Hair Removal",
+    description: "This is a service description for service 3"
   }
 ];
 
@@ -60,6 +63,7 @@ function createServiceCard(Services){
           <h5>${Services.name}</h5>
           <p>${Services.description}</p>
         </div>
+        <a href="#" role="button">Learn More</a>
     </article>
   `;
 
