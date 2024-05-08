@@ -4,63 +4,76 @@ const Services = [
   {
     image: "assets/header.jpg",
     name: "Service 1",
-    servicepic: "",
     description: "This is a service description for service 1"
   },
   {
     image: "assets/header.jpg",
     name: "Service 2",
-    servicepic: "",
     description: "This is a service description for service 2"
   },
   {
     image: "assets/header.jpg",
     name: "Service 3",
-    servicepic: "",
     description: "This is a service description for service 3"
   },
   {
     image: "assets/header.jpg",
     name: "Service 3",
-    servicepic: "",
     description: "This is a service description for service 3"
   },
   {
       image: "assets/header.jpg",
       name: "Service 3",
-      servicepic: "",
+
       description: "This is a service description for service 3"
   },
-   {
+  {
       image: "assets/header.jpg",
-      name: "Service 5",
-      servicepic: "",
+      name: "Service 3",
+
       description: "This is a service description for service 3"
-  },
-   
- 
+  }
 ];
 
 
 function createServiceCard(Services){
 
   return `
-    <article>
-        <img src="${Services.image}">
+    <article class="service-card">
         <div>
+          <img src=${Services.image} class="service-pic"/>
           <h5>${Services.name}</h5>
           <p>${Services.description}</p>
         </div>
-
     </article>
   `;
 
 }
 
 const serviceContainer = document.getElementById('service_container')
-Services.forEach((Services) => {
+let currentRow = document.createElement('div');
+currentRow.classList.add('service_row');
+serviceContainer.appendChild(currentRow);
+let cardCount = 0;
 
-  serviceContainer.innerHTML += createServiceCard(Services);
+
+Services.forEach((Services, index) => {
+
+  // serviceContainer.innerHTML += createServiceCard(Services);
+
+  // serviceContainer.style.margin = '2em';
+
+  currentRow.innerHTML += createServiceCard(Services);
+  cardCount++;
+
+  if (cardCount > 3) {
+
+    currentRow = document.createElement('div');
+    currentRow.classList.add('service_row');
+    serviceContainer.appendChild(currentRow);
+    cardCount = 1;
+
+  }
 
 });
 
